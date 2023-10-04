@@ -17,7 +17,9 @@
   <!-- Categoria Column -->
   <ng-container matColumnDef="categoria">
     <th mat-header-cell *matHeaderCellDef> Categoria </th>
-    <td mat-cell *matCellDef="let interpolacao"> {{interpolacao.categoria}} </td>
+    <td mat-cell *matCellDef="let interpolacao"> {{interpolacao.categoria}}
+      <mat-icon aria-hidden="false" aria-label="Categoria do Curso">{{ interpolacao.categoria | categoria }}</mat-icon>
+    </td>
   </ng-container>
 
 

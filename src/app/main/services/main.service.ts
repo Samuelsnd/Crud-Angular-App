@@ -16,7 +16,7 @@ export class MainService {
 
   findAll(){
     return this.httpCliente.get<Main[]>(this.API)
-    .pipe(delay(5000),
+    .pipe(//delay(5000),
     tap(mainList => console.log(mainList)));
   }
 
