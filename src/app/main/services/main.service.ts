@@ -20,4 +20,8 @@ export class MainService {
     tap(mainList => console.log(mainList)));
   }
 
+  save(register: Main) {
+      return this.httpCliente.post<Main>(this.API, register);
+  }
+
 }
