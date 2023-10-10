@@ -15,7 +15,7 @@ export class MainComponent {
 
   main: Observable<Main[]>;
 
-  displayedColumns = ['name','categoria','actions'];
+
 
   constructor(
     public dialog: MatDialog,

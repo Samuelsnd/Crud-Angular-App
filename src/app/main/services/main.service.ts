@@ -20,7 +20,7 @@ export class MainService {
     tap(mainList => console.log(mainList)));
   }
 
-  save(register: Main) {
+  save(register: Partial<Main>) {
       return this.httpCliente.post<Main>(this.API, register);
   }
 
