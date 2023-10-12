@@ -1,10 +1,10 @@
-import { MainService } from './../services/main.service';
 import { Component } from '@angular/core';
-import { Main } from './model/main';
 import { Observable, catchError, of } from 'rxjs';
 import { MatDialog } from '@angular/material/dialog';
 import { ErrorDialogComponent } from 'src/app/shared/components/error-dialog/error-dialog.component';
 import {  ActivatedRoute, Router } from '@angular/router';
+import { Main } from '../../model/main';
+import { MainService } from '../../services/main.service';
 
 @Component({
   selector: 'app-main',
@@ -41,4 +41,5 @@ export class MainComponent {
   onAdd() {
     this.router.navigate(['new'], {relativeTo: this.route})
   }
+
 }

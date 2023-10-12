@@ -1,8 +1,7 @@
-import { Main } from './../main/model/main';
 import { HttpClient } from '@angular/common/http'
-
 import { Injectable } from '@angular/core';
-import { delay, tap } from 'rxjs';
+import { tap } from 'rxjs';
+import { Main } from '../model/main';
 
 
 @Injectable({
