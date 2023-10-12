@@ -23,4 +23,8 @@ export class MainService {
       return this.httpCliente.post<Main>(this.API, register);
   }
 
+  loadById(id: string) {
+    return this.httpCliente.get<Main>(`${this.API}/${id}`);
+  }
+
 }

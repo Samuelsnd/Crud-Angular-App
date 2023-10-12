@@ -42,4 +42,8 @@ export class MainComponent {
     this.router.navigate(['new'], {relativeTo: this.route})
   }
 
+  onEdit(main: Main) {
+    this.router.navigate(['edit', main._id], {relativeTo: this.route})
+  }
+
 }

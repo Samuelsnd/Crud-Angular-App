@@ -27,7 +27,7 @@
     </mat-header-cell>
 
     <mat-cell *matCellDef="let interpolacao" class="action-colum">
-      <button mat-icon-button color="primary" aria-label="Editar Curso">
+      <button mat-icon-button color="primary" aria-label="Editar Curso" (click)="onEdit(interpolacao)">
         <mat-icon>edit</mat-icon>
       </button>
 

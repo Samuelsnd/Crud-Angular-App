@@ -12,10 +12,15 @@ export class CourseListComponent {
 
   @Input() main: Main[] = [];// Entrada
   @Output() add = new EventEmitter(false);
+  @Output() edit = new EventEmitter(false);
 
   readonly displayedColumns = ['name', 'categoria', 'actions'];
 
   onAdd() {
     this.add.emit(true);
+  }
+
+  onEdit(main: Main) {
+    this.edit.emit(main);
   }
 }
