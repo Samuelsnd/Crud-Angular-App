@@ -7,7 +7,7 @@ import { CourseResolver } from './guards/course.resolver';
 
 const routes: Routes = [
   { path:'', component: MainComponent},
-  { path:'new', component: CourseFormComponent},
+  { path:'new', component: CourseFormComponent, resolve: {main: CourseResolver}},
   { path:'edit/:id', component: CourseFormComponent, resolve: {main: CourseResolver }}
 ];
 
