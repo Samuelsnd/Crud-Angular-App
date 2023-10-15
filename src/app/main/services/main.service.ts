@@ -20,6 +20,7 @@ export class MainService {
   }
 
   save(register: Partial<Main>) {
+    console.log(register)
     if(register._id) {
       return this.update(register);
     }
@@ -32,6 +33,10 @@ export class MainService {
 
   private update(record: Partial<Main>) {
     return this.httpCliente.put<Main>(`${this.API}/${record._id}`, record).pipe(first());
+  }
+
+  delete(id: string) {
+    return this.httpCliente.delete(`${this.API}/${id}`).pipe(first());
   }
 
   loadById(id: string) {

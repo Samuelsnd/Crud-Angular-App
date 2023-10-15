@@ -21,14 +21,15 @@ export class CourseFormComponent {
               private location: Location,
               private route: ActivatedRoute) {
       this.form = this.formBuilder.group( {
-        name: [null],
-        categoria: [null]
+        _id: [''],
+        name: [''],
+        categoria: ['']
       });
   }
 
   ngOnInit(): void{
     const main: Main = this.route.snapshot.data['main'];
-    this.form.setValue({ name: main.name, categoria: main.categoria})
+    this.form.setValue({_id: main._id, name: main.name, categoria: main.categoria})
   }
 
 

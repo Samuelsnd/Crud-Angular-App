@@ -10,7 +10,8 @@
     else loading"
     [main]="mains"
     (add)="onAdd()"
-    (edit)="onEdit($event)">
+    (edit)="onEdit($event)"
+    (delete)="onDelete($event)">
   </app-course-list>
 
     <ng-template #loading>
