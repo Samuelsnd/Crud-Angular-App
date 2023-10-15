@@ -16,7 +16,7 @@ import { MainComponent } from './containers/main/main.component';
   declarations: [
     MainComponent,
     CourseFormComponent,
-    CourseListComponent
+    CourseListComponent,
   ],
   imports: [
     CommonModule,
