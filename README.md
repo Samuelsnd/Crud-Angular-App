@@ -1,27 +1,29 @@
-# CrudAngular
+![Angular APP (1)](https://github.com/Samuelsnd/Crud-Angular-API/assets/95856841/888ed151-1e67-432d-bbf0-25af82cf5446)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
+## Descrição do projeto
+:construction: Projeto em construção :construction:
 
-## Development server
+APP Angular que faz a Conexão para uma API Rest baseada em um CRUD para um sistema web de cursos. Utilizando do modelo MVC do spring framework e boas práticas, esta API disponibiliza o uso da criação de um curso com suas respectivas aulas, atualização e remoção.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![Angular APP (2)](https://github.com/Samuelsnd/Crud-Angular-API/assets/95856841/c4b1d63e-85f8-4e16-8d86-5c7a1cd4d18c)
 
-## Code scaffolding
+# :hammer: Funcionalidades do projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+https://github.com/Samuelsnd/Crud-Angular-API/assets/95856841/62b66609-1257-4d59-be8c-1f2e62c1e1cb
 
-## Build
+- `APP Angular`: CRUD
+- Este APP faz a conexão para uma API Rest que disponibiliza toda a regra de negócio para a aplicação Client.
+- Design com o Angular Material.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## ✔️ Técnicas e tecnologias utilizadas
 
-## Running unit tests
+- ``Angular 16``
+- ``Node``
+- ``Paradigma de orientação a objetos``
+- ``Tratamento de Erros no Front-End``
+- ``Angular Typed Forms``
+- ``Componentes inteligentes``
+- ``Form Array``
+- ``Angular Material``
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
